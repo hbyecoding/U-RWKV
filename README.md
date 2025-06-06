@@ -73,7 +73,9 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-
+### HERE IS A PRIVATE VERSION ,MAYBE YOU COULD NOT BUILD IT ~
+TODO
+[ ] add v_enc_rwkv (U-RWKV)
 ### Training
 
 ```bash
