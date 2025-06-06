@@ -1,0 +1,66 @@
+  0%|                                                                               | 0/2363 [00:00<?, ?it/s]
+  0%|                                                                                 | 0/50 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "/data/hongboye/projects/Tan9/src/network/conv_based/transformer_learning/train_L.py", line 80, in <module>
+    y_pred = model(img)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/hongboye/projects/Tan9/src/network/conv_based/transformer_learning/model_L.py", line 45, in forward
+    x = self.encoder_blocks(x)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 416, in forward
+    output = mod(output, src_mask=mask, is_causal=is_causal, src_key_padding_mask=src_key_padding_mask_for_layers)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 747, in forward
+    x = x + self._ff_block(self.norm2(x))
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 765, in _ff_block
+    x = self.linear2(self.dropout(self.activation(self.linear1(x))))
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/dropout.py", line 59, in forward
+    return F.dropout(input, self.p, self.training, self.inplace)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/functional.py", line 1295, in dropout
+    return _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 23.69 GiB of which 17.31 MiB is free. Process 1071230 has 266.00 MiB memory in use. Process 2088910 has 19.17 GiB memory in use. Including non-PyTorch memory, this process has 4.21 GiB memory in use. Of the allocated memory 3.85 GiB is allocated by PyTorch, and 59.60 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/data/hongboye/projects/Tan9/src/network/conv_based/transformer_learning/train_L.py", line 80, in <module>
+    y_pred = model(img)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/hongboye/projects/Tan9/src/network/conv_based/transformer_learning/model_L.py", line 45, in forward
+    x = self.encoder_blocks(x)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 416, in forward
+    output = mod(output, src_mask=mask, is_causal=is_causal, src_key_padding_mask=src_key_padding_mask_for_layers)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 747, in forward
+    x = x + self._ff_block(self.norm2(x))
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 765, in _ff_block
+    x = self.linear2(self.dropout(self.activation(self.linear1(x))))
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/dropout.py", line 59, in forward
+    return F.dropout(input, self.p, self.training, self.inplace)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/functional.py", line 1295, in dropout
+    return _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 23.69 GiB of which 17.31 MiB is free. Process 1071230 has 266.00 MiB memory in use. Process 2088910 has 19.17 GiB memory in use. Including non-PyTorch memory, this process has 4.21 GiB memory in use. Of the allocated memory 3.85 GiB is allocated by PyTorch, and 59.60 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

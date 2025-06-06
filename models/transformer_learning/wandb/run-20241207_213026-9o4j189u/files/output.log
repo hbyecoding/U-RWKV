@@ -1,0 +1,63 @@
+[32m2024-12-07 21:30:26.766[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m72[0m - [1m2363 iterations per epoch[0m
+ 18%|███████████▊                                                       | 415/2363 [12:47<1:00:04,  1.85s/it]
+  0%|                                                                                 | 0/50 [12:47<?, ?it/s]
+Traceback (most recent call last):
+  File "/data/hongboye/projects/Tan9/src/network/conv_based/transformer_learning/train_L.py", line 81, in <module>
+    y_pred = model(img)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/hongboye/projects/Tan9/src/network/conv_based/transformer_learning/model_L.py", line 45, in forward
+    x = self.encoder_blocks(x)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 416, in forward
+    output = mod(output, src_mask=mask, is_causal=is_causal, src_key_padding_mask=src_key_padding_mask_for_layers)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 746, in forward
+    x = x + self._sa_block(self.norm1(x), src_mask, src_key_padding_mask, is_causal=is_causal)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 757, in _sa_block
+    x = self.self_attn(x, x, x,
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/activation.py", line 1287, in forward
+    return attn_output.transpose(1, 0), attn_output_weights
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/data/hongboye/projects/Tan9/src/network/conv_based/transformer_learning/train_L.py", line 81, in <module>
+    y_pred = model(img)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/hongboye/projects/Tan9/src/network/conv_based/transformer_learning/model_L.py", line 45, in forward
+    x = self.encoder_blocks(x)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 416, in forward
+    output = mod(output, src_mask=mask, is_causal=is_causal, src_key_padding_mask=src_key_padding_mask_for_layers)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 746, in forward
+    x = x + self._sa_block(self.norm1(x), src_mask, src_key_padding_mask, is_causal=is_causal)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 757, in _sa_block
+    x = self.self_attn(x, x, x,
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/hongboye/anaconda3/envs/rwkv/lib/python3.10/site-packages/torch/nn/modules/activation.py", line 1287, in forward
+    return attn_output.transpose(1, 0), attn_output_weights
+KeyboardInterrupt

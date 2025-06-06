@@ -1,0 +1,17 @@
+100%|██████████████████████████████████████████████████████████████████| 2363/2363 [1:12:17<00:00,  1.84s/it]
+100%|██████████████████████████████████████████████████████████████████████| 263/263 [00:59<00:00,  4.38it/s]
+[32m2024-12-07 21:27:07.612[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m119[0m - [1m------------------------------[0m
+[32m2024-12-07 21:27:07.613[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m120[0m - [1mTrain Loss Epoch 1 : 2.2791[0m
+[32m2024-12-07 21:27:07.613[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m121[0m - [1mVal Loss Epoch 1 : 2.0895[0m
+[32m2024-12-07 21:27:07.613[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m122[0m - [1mTrain Accuracy EPOCH 1: 0.1226[0m
+[32m2024-12-07 21:27:07.613[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m123[0m - [1mVal Accuracy EPOCH 1: 0.2171[0m
+[32m2024-12-07 21:27:07.613[0m | [1mINFO    [0m | [36m__main__[0m:[36m<module>[0m:[36m124[0m - [1m------------------------------[0m
+  0%|                                                                               | 0/50 [1:13:17<?, ?it/s]
+Traceback (most recent call last):
+  File "/data/hongboye/projects/Tan9/src/network/conv_based/transformer_learning/train_L.py", line 132, in <module>
+    "Learning Rate": lr_
+NameError: name 'lr_' is not defined
+Traceback (most recent call last):
+  File "/data/hongboye/projects/Tan9/src/network/conv_based/transformer_learning/train_L.py", line 132, in <module>
+    "Learning Rate": lr_
+NameError: name 'lr_' is not defined

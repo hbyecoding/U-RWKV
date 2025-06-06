@@ -1,0 +1,69 @@
+_wandb:
+    value:
+        cli_version: 0.18.7
+        m: []
+        python_version: 3.10.14
+        t:
+            "1":
+                - 1
+                - 5
+                - 41
+                - 53
+                - 55
+            "2":
+                - 1
+                - 5
+                - 41
+                - 53
+                - 55
+            "3":
+                - 16
+                - 23
+                - 55
+            "4": 3.10.14
+            "5": 0.18.7
+            "8":
+                - 2
+                - 5
+            "12": 0.18.7
+            "13": linux-x86_64
+activation:
+    value: gelu
+batch_size:
+    value: 16
+datasetname:
+    value: MNIST
+dropout:
+    value: 0.001
+embed_dim:
+    value: 64
+epochs:
+    value: 50
+img_size:
+    value: 28
+in_channels:
+    value: 1
+learning_rate:
+    value: 0.001
+modelname:
+    value: vit
+momentum:
+    value: 0.9
+num_classes:
+    value: 10
+num_encoders:
+    value: 768
+num_heads:
+    value: 8
+optimizer:
+    value: adam
+patch_size:
+    value: 4
+submission_df_dir:
+    value: ./dataset/sample_submission.csv
+test_df_dir:
+    value: ./dataset/test.csv
+train_df_dir:
+    value: ./dataset/train.csv
+weight_decay:
+    value: 0
